@@ -1,0 +1,365 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+section{
+  width: 100%;
+  height: 10vh;
+  background-image: url(bg.png);
+  background-size: cover;
+  background-position:center;
+}
+
+section nav{
+  width: 100%;;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  box-shadow:  0px 1px 5px 1px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 100;
+}
+
+section nav .logo img{
+  width: 50px;
+  margin: 8px 0px;
+  cursor: pointer;
+}
+
+section nav li{
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+section nav li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+section nav li a:hover{
+  color:rgb(203, 0, 217);
+}
+
+section nav .social-icons i{
+  margin: 0px 5px;
+  font-size: 25px;
+  margin: 0px 10px;
+}
+
+section nav .social-icons i:hover{
+  color:rgb(203, 0, 217);
+  cursor: pointer;
+}
+
+
+.top-image img{
+  object-fit: cover;
+  max-width: 100%;
+  border: 0;
+}
+
+.two-books{
+  display: flex;
+  padding: 10px 10px;
+  justify-content:space-evenly;
+  margin-bottom: 200px;
+}
+/* banner */
+.banner-container{
+  overflow: hidden;
+  width: 100%;
+}
+.banner .item{
+  padding: 5px;
+  font-size: 30px;
+  font-family: 'DM Serif Display', serif;
+  display: inline-block;
+  
+}
+.banner{
+  /* display: inline-block;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+  overflow: hidden; */
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(10%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+.fiction  h3{
+  margin-bottom: 10px;
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+}
+
+.manga h3{
+  margin-bottom: 10px;
+  font-family: 'DM Serif Display', serif;
+  font-size: 30px;
+}
+.main{
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  height: 500px;
+}
+
+.main h1{
+  position: relative;
+  font-size:55px;
+  top:80px;
+  left:25px;
+}
+
+ .main h1 span{
+  color: #089;
+}
+ .main p{
+  width: 650px;
+  text-align: justify;
+  line-height: 22px;
+  font-size: 20px;
+  position: relative;
+  top: 125px;
+  left: 25px;
+}
+ .main .main_tag .main_btn{
+  background-color: #089;
+  padding: 10px 20px;
+  position: relative;
+  top: 200px;
+  left: 250px;
+  color:#fff;
+  text-decoration: none;
+}
+
+ .main .main_img img{
+  max-width: 780px;
+  position: relative;
+  top: 90px;
+}
+.trending-image img{
+  width: 100%;
+}
+.trending-image p{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'DM Serif Display', serif;
+  margin-bottom: 30px;
+  
+}
+footer{
+  position:relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding:20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social-icons,footer .menu {
+  position: relative;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+
+footer .social-icons li ,footer .menu{
+  list-style: none;
+}
+
+footer .social-icons li {
+  font-size: 3em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition:0.5s;
+}
+
+footer .social-icons li :hover,footer .menu li a:hover{
+  transform:translateY(-10px);
+}
+
+footer .menu{
+  list-style: none;
+}
+
+footer .menu li a{
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition:0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+ footer .wave{
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(wave.png);
+  background-size: 1000px 100px;
+ }
+ 
+ footer p{
+  margin-top: 10px;
+ }
+ footer .wave#wave1{
+   z-index: 100;
+   opacity: 1;
+   bottom: 0;
+   animation: animateWave 4s linear infinite;
+ }
+ footer .wave#wave2{
+  z-index: 99;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave_02 3s linear infinite;
+}
+footer .wave#wave3{
+  z-index: 98;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 2.5s linear infinite;
+}
+footer .wave#wave4{
+ z-index: 99;
+ opacity: 0.7;
+ bottom: 10px;
+ animation: animateWave_02 2s linear infinite;
+}
+@keyframes animateWave{
+  0%{
+    background-position-x: 1000px ;
+  }
+  100%{
+    background-position-x: 0px ;
+  }
+}
+
+
+@keyframes animateWave_02{
+  0%{
+    background-position-x: 1000px ;
+  }
+  100%{
+    background-position-x: 0px ;
+  }
+}
+.books {
+  margin-top: 100px;
+  width: 100%;
+  height: 100vh;
+  padding: 70px 0;
+
+}
+.books h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 50px;
+}
+
+.books .books-box{
+  width: 100%;
+  height: 60vh;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+  grid-auto-flow:column ;
+  overflow-x: scroll;
+}
+
+.books-card{
+  width: 250px;
+  height: 420px;
+  text-align: center;
+  padding: 5px;
+  border:1px solid #919191;
+  margin: auto 20px;
+}
+
+.books-card:hover{
+  box-shadow: 0 0 5px grey  ;
+  cursor: pointer;
+}
+
+.book-image {
+  height: 300px;
+  padding: 10px;
+}
+
+.book-image img{
+  width: 100%;
+  height: 100%;
+  
+}
+ .books-card:hover{
+  transform: scale(1.1);
+ }
+
+ .book-tag h2{
+  margin: 12px;
+  
+ }
+
+ .book-tag .writer{
+  color: grey;
+ }
+
+ .book-tag .book-price{
+  margin-top: 8px;
+  font-weight: bold;
+  margin-bottom: 15px;
+ }
+
+ .book-tag .book-price sub{
+  font-weight: 100;
+  padding: 0 5px;
+ }
+
+ .book-tag .f-btn{
+  padding: 8px 20px;
+  border: 2px solid #089;
+  text-decoration: none;
+  color: black;
+ }
+
+ .book-tag .f-btn:hover{
+  background:#089;
+  cursor: pointer;
+  transition: 0.5s;
+ }
+ ::-webkit-scrollbar{
+  width: 10px;
+  height: 5px;
+ }
+ ::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+ }
+ ::-webkit-scrollbar-thumb{
+  background: #089;
+  border-radius: 10px;
+ }
